@@ -1,28 +1,25 @@
 package B1;
 
+import java.util.Scanner;
+
 public class TrabajoBloque1 {
     public static void main(String[] args) {
-        int edad = 25;
-        double precio = 25/3;
-        char inicial = 'J';
-        boolean esVerdad = true;
-        String nombre = "Juan Manuel";
-        //Primitivos
-        short valores=-32768;
-        int num1=9; //primitivo
-        double num3=3.4;
-        char caracter='A';
 
-        //Wrapper
-        Short valor= 32767;
-        Integer num2 = 10; //Wrapper int
-        Double num10=3.4; //double
-        Character caraterW='T';
-        String text= "hola mundo"; //texto
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese 3 numeros");
+        double num1 = scanner.nextDouble();
+        double num2 = scanner.nextDouble();
+        double num3 = scanner.nextDouble();
 
-        System.out.println("" + text);
-
-
-
+        if (num1 > num2 && num1>num3) {
+            System.out.println("El número mayor es "+num1);
+        } else if (num2 > num1 && num2>num3) {
+            System.out.println("El número mayor es "+num2);
+        } else if (num3 > num1 && num3>num2) {
+            System.out.println("El número mayor es "+num3);
+        } else {
+            System.out.println("Los números son iguales");
+        }
+        scanner.close();
     }
 }
