@@ -40,26 +40,25 @@ public class TrabajoBloque4 {
                     if (nom == null || nom.equals(" ")) {
                         throw new Exception("Debe poner el nombre");
                     }
-                    if (ape == null || ape.equals("")) {
+                    if (ape == null || ape.isEmpty()) {
                         throw new Exception("Debe poner el apellido");
                     }
-                    if (tel == null || tel.equals("")) {
+                    if (tel == null || tel.isEmpty()) {
                         throw new Exception("Debe poner el telefono");
                     }
-                    if (ced == null || ced.equals("")) {
+                    if (ced == null || ced.isEmpty()) {
                         throw new Exception("Debe poner la cedula");
                     }
                     if (prom == Double.parseDouble((""))) {
                         throw new Exception("Debe poner su porcentaje");
                     }
-                    if (carr == null || carr.equals("")) {
+                    if (carr == null || carr.isEmpty()) {
                         throw new Exception("Debe poner la carrera a cursar");
                     }
-                    registrationComplete = false;
                 } catch (Exception e) {
                     logger.atError().log(e);
                 } finally {
-                    logger.atInfo().log("Prueba");
+                    logger.atInfo().log();
                 }
             }
 
