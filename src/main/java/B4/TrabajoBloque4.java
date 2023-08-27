@@ -49,7 +49,7 @@ public class TrabajoBloque4 {
                     if (ced == null || ced.equals("")) {
                         throw new Exception("Debe poner la cedula");
                     }
-                    if (prom == Double.parseDouble(null)) {
+                    if (prom == Double.parseDouble((""))) {
                         throw new Exception("Debe poner su porcentaje");
                     }
                     if (carr == null || carr.equals("")) {
@@ -63,8 +63,8 @@ public class TrabajoBloque4 {
                 }
             }
 
-            if (Estudiante.prom >= 3.0) {
-                System.out.println("Felicidades" + nom + ", quedas aprobado.");
+            if (prom >= 3.0) {
+                System.out.println("Felicidades " + nom + ", quedas aprobado.");
             } else {
                 System.out.println("Malas noticias" + nom + ", desaprobaste en la universidad.");
             }
